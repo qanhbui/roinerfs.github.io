@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="description" content="ROI-NeRFs: Hi-Fi Visualization of Objects of Interest within a Scene by NeRFs Composition">
-  <meta name="keywords" content="NeRF, Neural Radiance Fields, ROI, Region of Interest, 3D Reconstruction, Cultural Heritage, Gaussian Splatting">
+  <meta name="keywords" content="NeRF, Neural Radiance Fields, 3D Reconstruction, ROI, Region of Interest, Level of Detail, Cultural Heritage">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ROI-NeRFs: Hi-Fi Visualization of Objects of Interest within a Scene by NeRFs Composition</title>
 
@@ -361,7 +361,7 @@
   <div class="hero-body">
     <div class="container is-max-desktop has-text-centered">
 
-      <div class="publication-venue">VISAPP 2026 / ISMAR 2024</div>
+      <div class="publication-venue">VISAPP 2026</div>
 
       <h1 class="publication-title">
         ROI-NeRFs: Hi-Fi Visualization of Objects of Interest<br>
@@ -386,8 +386,8 @@
 
       <!-- Affiliations -->
       <div class="publication-authors" style="margin-top:0.5rem; font-size:0.95rem; color: var(--text-muted);">
-        <span class="author-block"><sup>1</sup>Université Paris-Saclay, CEA, List</span>&nbsp;&nbsp;
-        <span class="author-block"><sup>2</sup>Université de Toulouse, Toulouse INP – IRIT</span>
+        <span class="author-block"><sup>1</sup>Université Paris-Saclay, CEA-List</span>&nbsp;&nbsp;
+        <span class="author-block"><sup>2</sup>Université de Toulouse, Toulouse INP, IRIT</span>
       </div>
 
       <!-- Links -->
@@ -462,24 +462,24 @@
     <h2 class="section-title">Abstract</h2>
     <div class="abstract-content" style="margin-top:1.2rem;">
       <p>
-        Efficient and accurate 3D reconstruction is essential for applications in cultural heritage.
+        <!-- Efficient and accurate 3D reconstruction is essential for applications in cultural heritage.
         This study addresses the challenge of visualizing objects within large-scale scenes at a high
         level of detail (LOD) using Neural Radiance Fields (NeRFs). The aim is to improve the visual
         fidelity of chosen objects while maintaining the efficiency of the computations by focusing on
-        details only for relevant content.
+        details only for relevant content. -->
       </p>
       <p style="margin-top:0.8rem;">
-        The proposed <strong>ROI-NeRFs</strong> framework divides the scene into a <em>Scene NeRF</em>,
+        <!-- The proposed <strong>ROI-NeRFs</strong> framework divides the scene into a <em>Scene NeRF</em>,
         which represents the overall scene at moderate detail, and multiple <em>ROI NeRFs</em> that
         focus on user-defined objects of interest. An object-focused camera selection module automatically
         groups relevant cameras for each NeRF training during the <strong>decomposition phase</strong>.
         In the <strong>composition phase</strong>, a Ray-level Compositional Rendering technique combines
-        information from the Scene NeRF and ROI NeRFs, allowing simultaneous multi-object rendering composition.
+        information from the Scene NeRF and ROI NeRFs, allowing simultaneous multi-object rendering composition. -->
       </p>
       <p style="margin-top:0.8rem;">
-        Experiments on real-world cultural heritage datasets — including the <em>Abbaye de Montmajour</em>
+        <!-- Experiments on real-world cultural heritage datasets — including the <em>Abbaye de Montmajour</em>
         and the <em>Hôtel de la Marine</em> — demonstrate that ROI-NeRFs significantly enhances the rendering
-        quality of selected objects with minimal computational overhead.
+        quality of selected objects with minimal computational overhead. -->
       </p>
     </div>
   </div>
@@ -497,21 +497,27 @@
         <div class="highlight-card">
           <div class="highlight-icon"><i class="fas fa-vector-square"></i></div>
           <h4>ROI Decomposition</h4>
-          <p>User-defined bounding boxes separate the scene into a global Scene NeRF and local ROI NeRFs, each optimized for different levels of detail.</p>
+          <p>
+          <!-- User-defined bounding boxes separate the scene into a global Scene NeRF and local ROI NeRFs, each optimized for different levels of detail. -->
+          </p>
         </div>
       </div>
       <div class="column is-4">
         <div class="highlight-card">
           <div class="highlight-icon"><i class="fas fa-camera"></i></div>
           <h4>Camera Selection</h4>
-          <p>A semi-automatic, object-focused camera selection strategy ensures each ROI NeRF is trained with the most relevant views for maximum fidelity.</p>
+          <p>
+            <!-- A semi-automatic, object-focused camera selection strategy ensures each ROI NeRF is trained with the most relevant views for maximum fidelity. -->
+          </p>
         </div>
       </div>
       <div class="column is-4">
         <div class="highlight-card">
           <div class="highlight-icon"><i class="fas fa-layer-group"></i></div>
           <h4>Ray-level Composition</h4>
-          <p>A Ray-level Compositional Rendering technique seamlessly merges Scene NeRF and ROI NeRFs, enabling multi-object high-fidelity rendering.</p>
+          <p>
+            <!-- A Ray-level Compositional Rendering technique seamlessly merges Scene NeRF and ROI NeRFs, enabling multi-object high-fidelity rendering. -->
+          </p>
         </div>
       </div>
     </div>
@@ -528,139 +534,12 @@
         </div>
       </div>
       <figcaption>
-        <strong>Figure 1.</strong> Overview of the ROI-NeRFs pipeline. Given a set of input images and user-defined ROIs,
+        <strong>Figure 1.</strong> Overview of the ROI-NeRFs pipeline. 
+        <!-- Given a set of input images and user-defined ROIs,
         the framework decomposes the scene into a global Scene NeRF and multiple ROI NeRFs through object-focused camera selection.
-        During rendering, Ray-level Compositional Rendering merges all components seamlessly.
+        During rendering, Ray-level Compositional Rendering merges all components seamlessly. -->
       </figcaption>
     </figure>
-  </div>
-</section>
-
-<!-- ════════════════════════════════════════════════════════════════════ -->
-<!-- VIDEO (optional)                                                    -->
-<!-- ════════════════════════════════════════════════════════════════════ -->
-<section class="section">
-  <div class="container is-max-desktop">
-    <h2 class="section-title">Video</h2>
-    <div style="margin-top:1.2rem;">
-      <!-- Replace with your YouTube embed or local video -->
-      <div class="video-placeholder" id="video-container">
-        <div style="text-align:center;">
-          <i class="fas fa-play-circle"></i><br>
-          Replace with your video embed<br>
-          <small style="opacity:0.7;">Uncomment the iframe in the HTML source</small>
-        </div>
-      </div>
-      <!--
-      <div class="publication-video">
-        <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID?rel=0&showinfo=0"
-                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen
-                style="width:100%; aspect-ratio:16/9; border-radius:12px;">
-        </iframe>
-      </div>
-      -->
-    </div>
-  </div>
-</section>
-
-<!-- ════════════════════════════════════════════════════════════════════ -->
-<!-- RESULTS                                                             -->
-<!-- ════════════════════════════════════════════════════════════════════ -->
-<section class="section" style="background: var(--bg-light);">
-  <div class="container is-max-desktop">
-    <h2 class="section-title">Results</h2>
-
-    <p style="margin-top:1rem; color: var(--text-muted); line-height:1.7;">
-      ROI-NeRFs achieves significant quality improvements on regions of interest while preserving
-      the overall scene consistency. Below are qualitative comparisons on cultural heritage datasets.
-    </p>
-
-    <!-- Result Cards -->
-    <div class="results-grid">
-      <div class="result-card">
-        <div class="placeholder-img">
-          <div style="text-align:center;">
-            <i class="fas fa-image" style="font-size:1.5rem; margin-bottom:0.3rem;"></i><br>
-            <small>Abbaye de Montmajour — Baseline</small>
-          </div>
-        </div>
-        <div class="card-content">
-          <p><strong>Baseline (Nerfacto)</strong> — Uniform LOD across entire scene</p>
-        </div>
-      </div>
-      <div class="result-card">
-        <div class="placeholder-img" style="background: linear-gradient(135deg, #d5e8d4 0%, #b8d4a8 100%);">
-          <div style="text-align:center;">
-            <i class="fas fa-image" style="font-size:1.5rem; margin-bottom:0.3rem;"></i><br>
-            <small>Abbaye de Montmajour — ROI-NeRFs</small>
-          </div>
-        </div>
-        <div class="card-content">
-          <p><strong>ROI-NeRFs (Ours)</strong> — Enhanced detail on objects of interest</p>
-        </div>
-      </div>
-      <div class="result-card">
-        <div class="placeholder-img">
-          <div style="text-align:center;">
-            <i class="fas fa-image" style="font-size:1.5rem; margin-bottom:0.3rem;"></i><br>
-            <small>Hôtel de la Marine — Baseline</small>
-          </div>
-        </div>
-        <div class="card-content">
-          <p><strong>Baseline (Nerfacto)</strong> — Uniform LOD across entire scene</p>
-        </div>
-      </div>
-      <div class="result-card">
-        <div class="placeholder-img" style="background: linear-gradient(135deg, #d5e8d4 0%, #b8d4a8 100%);">
-          <div style="text-align:center;">
-            <i class="fas fa-image" style="font-size:1.5rem; margin-bottom:0.3rem;"></i><br>
-            <small>Hôtel de la Marine — ROI-NeRFs</small>
-          </div>
-        </div>
-        <div class="card-content">
-          <p><strong>ROI-NeRFs (Ours)</strong> — Enhanced detail on objects of interest</p>
-        </div>
-      </div>
-    </div>
-
-    <p style="margin-top:1.2rem; font-size:0.85rem; color:#999; text-align:center;">
-      <i class="fas fa-info-circle"></i>
-      Replace placeholder images with your actual result comparisons in <code>static/images/results/</code>
-    </p>
-  </div>
-</section>
-
-<!-- ════════════════════════════════════════════════════════════════════ -->
-<!-- RELATED PUBLICATIONS                                                -->
-<!-- ════════════════════════════════════════════════════════════════════ -->
-<section class="section">
-  <div class="container is-max-desktop">
-    <h2 class="section-title">Related Publications</h2>
-    <div style="margin-top:1.2rem; line-height:1.8; color:#444;">
-      <p>
-        This work is part of a series exploring the Region-of-Interest paradigm for photorealistic 3D scene reconstruction:
-      </p>
-      <ul style="margin-top:0.8rem; margin-left:1.5rem;">
-        <li style="margin-bottom:0.6rem;">
-          <strong>ROI-GS</strong> — <em>ROI-GS: Interest-based Local Quality 3D Gaussian Splatting</em>
-          (VCIP 2025).
-          Extends the ROI paradigm to 3D Gaussian Splatting for efficient object-aware reconstruction.
-          <a href="https://arxiv.org/abs/2510.01978" target="_blank" class="related-link">[arXiv]</a>
-        </li>
-        <li style="margin-bottom:0.6rem;">
-          <strong>XROI-GS</strong> — <em>Extended ROI Gaussian Splatting</em>
-          (ACM Multimedia 2026).
-          Further advances the framework with extended ROI strategies for complex scenes.
-          <!-- <a href="#" target="_blank" class="related-link">[arXiv]</a> -->
-        </li>
-      </ul>
-      <p style="margin-top:0.8rem;">
-        We also acknowledge the foundational works that inspired our approach:
-        <a href="https://github.com/nerfstudio-project/nerfstudio" target="_blank" class="related-link">Nerfstudio</a>,
-        <a href="https://www.matthewtancik.com/nerf" target="_blank" class="related-link">NeRF</a>, and
-        <a href="https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/" target="_blank" class="related-link">3D Gaussian Splatting</a>.
-      </p>
-    </div>
   </div>
 </section>
 
@@ -674,25 +553,10 @@
       <div class="bibtex-block" style="margin-top:1.2rem;">
         <button class="copy-btn" onclick="copyBibtex(this)"><i class="fas fa-copy"></i> Copy</button>
 <pre style="margin:0; white-space:pre-wrap;">@inproceedings{bui2024roinerfs,
-  title     = {ROI-NeRFs: Hi-Fi Visualization of Objects of Interest
-               within a Scene by NeRFs Composition},
-  author    = {Bui, Quoc-Anh and Rougeron, Gilles
-               and Morin, G\'{e}raldine and Gasparini, Simone},
-  booktitle = {IEEE International Symposium on Mixed
-               and Augmented Reality (ISMAR)},
-  year      = {2024}
-}</pre>
-      </div>
-      <div class="bibtex-block" style="margin-top:1rem;">
-        <button class="copy-btn" onclick="copyBibtex(this)"><i class="fas fa-copy"></i> Copy</button>
-<pre style="margin:0; white-space:pre-wrap;">@inproceedings{bui2025roigs,
-  title     = {ROI-GS: Interest-based Local Quality
-               3D Gaussian Splatting},
-  author    = {Bui, Quoc-Anh and Rougeron, Gilles
-               and Morin, G\'{e}raldine and Gasparini, Simone},
-  booktitle = {IEEE International Conference on Visual
-               Communications and Image Processing (VCIP)},
-  year      = {2025}
+  title     = {ROI-NeRFs: Hi-Fi Visualization of Objects of Interest within a Scene by NeRFs Composition},
+  author    = {Bui, Quoc-Anh and Rougeron, Gilles and Morin, Géraldine and Gasparini, Simone},
+  booktitle = {International Conference on Computer Vision Theory and Applications (VISAPP)},
+  year      = {2026}
 }</pre>
       </div>
     </div>
